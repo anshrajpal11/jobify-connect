@@ -24,3 +24,5 @@ var typed=new Typed('#typ',{
 
 
 
+
+

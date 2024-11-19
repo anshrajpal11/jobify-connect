@@ -391,3 +391,9 @@ h1{
   border-bottom-right-radius: 1.5rem;
   font-weight: 400;
 }
+
+@media (max-width: 500px) {
+  .jobbox{
+    display: block;
+  }
+}
