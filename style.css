@@ -172,7 +172,7 @@ h1{
 }
 
 /* Responsive Design */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .search-container {
     flex-direction: column;
   }
@@ -392,8 +392,9 @@ h1{
   font-weight: 400;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .jobbox{
     display: block;
   }
 }
+
