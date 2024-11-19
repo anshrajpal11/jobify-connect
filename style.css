@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #222831;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  width: 100vw;
+  position:fixed;
+}
+
+#logo {
+  background-color: aliceblue;
+  margin: 5px;
+  width: 10rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.l {
+  margin: 1rem;
+}
+
+#join {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+}
+
+#hbtn {
+  display: none;
+}
+
+.box {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 50%;
+  margin-left: 60%;
+  color: rgb(0, 0, 0);
+  border:1px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 0.5px 1px 0.5px;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .links {
+    display: none;
+  }
+  #hbtn {
+    display: flex;
+  }
+  .heroClass{
+    grid-auto-flow: column;
+  }
+}
+
+.heroClass{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* grid-template-columns: 1fr 1fr; */
+  /* height: 60vh; */
+}
+
+.leftHero{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+#maintext{
+  font-weight: 900;
+  color:#7996b6;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+#typ{
+  font-size: 4rem;
+  color: #EEEEEE;
+}
+
+.heroClass{
+  padding-top: 5rem;
+  background-color: #31363F;
+
+}
+
+h1{
+  font-size: 20-large;
+}
+
+#smallpara{
+  color: white;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Search bar container aligned to the left */
+.search-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: center; /* Optional: adds some padding from the left edge */
+}
+
+/* Input field style */
+.search-input {
+  width: 300px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 2px solid #64acb0;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input field focus effect */
+.search-input:focus {
+  border-color: #005f63;
+}
+
+/* Button style */
+.search-btn {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #64acb0;
+  color: white;
+  border: 2px solid #64acb0;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.search-btn:hover {
+  background-color: #005f63;
+  border-color: #005f63;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .search-container {
+    flex-direction: column;
+  }
+  .search-input {
+    width: 80%;
+  }
+}
+
+
+
+#imgg{
+  width: 100%;
+  min-width: 20rem;
+  max-width: 50vw;
+  /* height: 55vh; */
+}
+
+#need{
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+#most{
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center; 
+}
+.feature_section{
+  margin: 1rem;
+}
+.mainword{
+  padding: 2rem;
+  margin:0.2rem;
+}
+
+.iconimg{
+  height: 4rem;
+  width: 4rem;
+}
+
+
+.features{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature{
+  margin: 2rem;
+}
+
+.fea{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* General styles for the feature section */
+.feature_section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.mainword {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping of flex items */
+  justify-content: center; /* Centers the features horizontally */
+  gap: 20px; /* Adds space between items */
+}
+
+.feature {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(25% - 40px); /* Adjusts size dynamically, accounting for gaps */
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.fea {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tex {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive styles for different screen sizes */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .feature {
+      flex: 1 1 calc(50% - 40px); /* Two items per row */
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .feature {
+      flex: 1 1 100%; /* Full width for smaller screens */
+  }
+}
+
+.job-listings{
+  margin: 2rem;
+  background-color:#f9f9f9;
+}
+
+.job-filter{
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(62, 58, 58);
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap-reverse;
+}
+
+.joblogo{
+  height: 4rem;
+  width: 4rem;
+}
+
+.jobtitle{
+  font-weight: 500;
+}
+.jobsalary{
+  font-weight: 400;
+}
+.jobtype{
+  font-weight: 300;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.jobbox{
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.jobbox:hover{
+  transform: translateY(-6px);
+}
+
+#full{
+  background-color: rgb(241, 207, 213);
+  font-size: 1rem;
+  padding: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  font-weight: 400;
+}
+
+#part{
+  background-color: rgb(181, 241, 194);
+  font-size: 1rem;
+  padding: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  font-weight: 400;
+}
+
+#free{
+  background-color: rgb(173, 220, 234);
+  font-size: 1rem;
+  padding: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  font-weight: 400;
+}
