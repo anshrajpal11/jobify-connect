@@ -22,6 +22,8 @@ var typed=new Typed('#typ',{
     loop:true
 })
 
+const jboxes=document.querySelectorAll('.jobbox');
+const filters=document.querySelectorAll('.fts');
 
 
 

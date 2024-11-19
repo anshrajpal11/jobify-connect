@@ -353,6 +353,7 @@ h1{
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .jobbox:hover{
@@ -392,9 +393,4 @@ h1{
   font-weight: 400;
 }
 
-@media (min-width:0px) and (max-width: 2000px) {
-  .jobbox{
-    display: block;
-  }
-}
 
