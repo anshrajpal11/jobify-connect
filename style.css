@@ -61,36 +61,18 @@ a {
 }
 
 .box {
-  display: none; /* Initially hidden */
-  flex-direction: column; /* Column layout */
+  display: none;
+  flex-direction: column;
   background-color: #ffffff;
-  width: 100%; /* Full width */
-  position: absolute; /* Position it relative to the viewport */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  z-index: 1000; /* Ensure it stays on top */
+  width: 50%;
+  margin-left: 60%;
   color: rgb(0, 0, 0);
-  border-bottom: 1px solid black; /* Bottom border for separation */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border:1px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 0.5px 1px 0.5px;
+  width: 100%;
   justify-content: center;
-  align-items: center;
 }
-
-.box a {
-  padding: 15px;
-  text-align: center; /* Center-align text */
-  width: 100%; /* Full width for each link */
-  text-decoration: none;
-  color: black; /* Text color */
-  font-size: 18px; /* Font size */
-  border-bottom: 1px solid #ddd; /* Separate links */
-  align-self: center;
-}
-
-.box a:hover {
-  background-color: #f0f0f0; /* Highlight on hover */
-}
-
 
 @media (min-width: 0px) and (max-width: 500px) {
   .links {
@@ -413,4 +395,45 @@ h1{
   font-weight: 400;
 }
 
+.company-section{
+  margin: 2rem;
+  background-color:#f9f9f9;
+}
 
+
+
+.newimg{
+  height: 6rem;
+  width: 13rem;
+}
+
+.companies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.newfeature{
+  margin:1.5rem;
+  padding: 1.5rem;
+  background-color: #31363F;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 calc(25% - 40px); /* Adjusts size dynamically, accounting for gaps */
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+
+}
+
+.newfeature:hover{
+   transform: scale(1.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+#flip{
+  height: 7rem;
+  width: 15rem;
+}
