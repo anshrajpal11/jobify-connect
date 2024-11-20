@@ -22,9 +22,24 @@ var typed=new Typed('#typ',{
     loop:true
 })
 
-const jboxes=document.querySelectorAll('.jobbox');
-const filters=document.querySelectorAll('.fts');
 
+const fil=document.querySelectorAll('.fts');
+const boxes=document.querySelectorAll('.jobbox')
+fil.forEach(filter=>{
+    filter.addEventListener('click',()=>{
+        const getId=filter.id;
+        boxes.forEach(box =>{
+            const boxid=box.id
+            if(getId=='rj' || getId==boxid){
+                box.style.display="flex";
+            }
+            else{
+                box.style.display="none";
+            }
+        })
+        
+    })
+})
 
 
 

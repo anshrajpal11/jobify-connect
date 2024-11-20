@@ -7,11 +7,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+button{
+  all: unset;
+}
+
 .navbar {
   background-color: #222831;
   color: white;
   font-weight: bold;
   border: 1px solid black;
+  z-index: 100;
 }
 
 a {
@@ -23,9 +28,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   width: 100vw;
-  position:fixed;
+  /* position:fixed; */
 }
 
 #logo {
@@ -57,26 +61,43 @@ a {
 }
 
 .box {
-  display: none;
-  flex-direction: column;
+  display: none; /* Initially hidden */
+  flex-direction: column; /* Column layout */
   background-color: #ffffff;
-  width: 50%;
-  margin-left: 60%;
+  width: 100%; /* Full width */
+  position: absolute; /* Position it relative to the viewport */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it stays on top */
   color: rgb(0, 0, 0);
-  border:1px solid black;
-  border-radius: 4px;
-  box-shadow: 1px 0.5px 1px 0.5px;
+  border-bottom: 1px solid black; /* Bottom border for separation */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 0px) and (max-width: 400px) {
+.box a {
+  padding: 15px;
+  text-align: center; /* Center-align text */
+  width: 100%; /* Full width for each link */
+  text-decoration: none;
+  color: black; /* Text color */
+  font-size: 18px; /* Font size */
+  border-bottom: 1px solid #ddd; /* Separate links */
+  align-self: center;
+}
+
+.box a:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
   .links {
     display: none;
   }
   #hbtn {
     display: flex;
-  }
-  .heroClass{
-    grid-auto-flow: column;
   }
 }
 
@@ -353,7 +374,6 @@ h1{
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  display: block;
 }
 
 .jobbox:hover{
